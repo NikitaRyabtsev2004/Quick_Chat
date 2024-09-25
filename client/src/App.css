@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+body,
+html {
+    margin: 0;
+    background: black;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#root {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/97222190034163949/C97C04C5889019DBD8A4FDAB161875AD7A5815A0/?imw=512&amp;imh=299&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #5f80c773;
+    border-radius: 8px;
+    height: 80%;
+    width: 45%;
+    border-radius: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+        height: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
+
+
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #66347073;
+    border-radius: 4px 4px 0 0;
+    height: 60px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    border-bottom: 5px solid #000000;
+}
+
+.leftInnerContainer {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    color: white;
+}
+
+.rightInnerContainer {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.onlineIcon {
+    margin-right: 5%;
+}
+
+.form {
+    display: flex;
+    border-top: 5px solid #000000;
+}
+
+.input {
+    border: none;
+    border-radius: 0;
+    padding: 5%;
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 0 0 0 30px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #66347073;
+    padding: 20px;
+    display: inline-block;
+    border: none;
+    width: 20%;
+    border-radius: 0 0 30px 0;
+    transition: all 200ms ease-in-out;
+    border-left: 3px solid #000000;
+    font-size: 25px;
+}
+
+.sendButton:hover {
+    transform: scale(1.1) translateX(5px) translateY(2px);
+    background: #5f80c773;
+}
+
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/97222190034163949/C97C04C5889019DBD8A4FDAB161875AD7A5815A0/?imw=512&amp;imh=299&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joinInnerContainer {
+    width: 50%;
+    background-color: #00000091;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #6634709c;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: forwards jbutton 800ms;
+}
+
+@keyframes jbutton {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(1.1);
+    }
+
+    66% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mt-20 {
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+        height: 100%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+
+
+}
+
+button:focus {
+    outline: 0;
+}
+
+.messageBox {
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    max-width: 80%;
+    font-size: 18px;
+}
+
+.messageText {
+    width: 100%;
+    letter-spacing: 0;
+    float: left;
+    font-size: 1.1em;
+    word-wrap: break-word;
+}
+
+.messageText img {
+    vertical-align: middle;
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    margin-top: 3px;
+}
+
+.sentText {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    color: #828282;
+    letter-spacing: 0.3px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.justifyStart {
+    justify-content: flex-start;
+}
+
+.justifyEnd {
+    justify-content: flex-end;
+}
+
+.colorWhite {
+    color: rgb(255, 255, 255);
+}
+
+.colorDark {
+    color: #000000;
+}
+
+.backgroundMy {
+    background: #a153b1;
+}
+
+.backgroundLight {
+    background: #b8c8ff;
+}
+
+.messages {
+    padding: 5% 0;
+    overflow: auto;
+    flex: auto;
+}
+
+.textContainer {
+    background-color: #5f80c773;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 400px;
+    color: white;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 30px;
+    height: auto;
+    text-shadow: 0 0 5px white;
+}
+
+.textContainer h1 {
+    background-color: #0000006c;
+    padding: 10px;
+    border-radius: 30px 30px 0 0;
+}
+
+.activeContainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #0000006c;
+    border-radius: 0 0 30px 30px;
+}
+
+.activeItem {
+    display: flex;
+    align-items: center;
+}
+
+.activeContainer img {
+    padding-left: 10px;
+}
+
+.textContainer h1 {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .textContainer {
+        display: none;
+    }
+}
